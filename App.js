@@ -1,12 +1,17 @@
+import React, { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
-import { Button, Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
+import { Intro } from "./app/intro/Intro";
+import { Onboading } from "./app/intro/Onboading";
 
 export default MobileApp = () => {
+
+
   return (
     <>
-      <View className="flex-1 w-full flex justify-center items-center bg-black">
-        <Button title="lollllll" className='px-10'/>
-      </View>
+      <SafeAreaView className="w-full h-full">
+        <Onboading />
+      </SafeAreaView>
     </>
   );
 };
